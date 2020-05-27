@@ -37,7 +37,6 @@
     </nav>
       <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login </h4>
@@ -81,14 +80,96 @@
         <div class="col-12 col-sm align-self-center">
             <img src="img/logo.png" class="img-fluid">
         </div>
-        <div class="button align-self-center " heigth="37" role="button">
-           <a type="button" class="btn btn-warning button-toggle" data-toggle="Reservetable">
-      Rserve Table</a>
+    <div class="align-self-center">
+      <button type="button align-self-center" role="button" height="37" class="btn btn-warning button-toggle" data-toggle="modal" data-target="#RModal">
+  Reserve Table
+</button>
+    </div>
+     <div id="RModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="abc">Reserve Table  </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                      <div class="table-responsive">
+                    <table class="table table-borderless" >
+                        <tbody>
+                         <th class="abc">Number of Guest</th>
+                            <td>
+                             <div class="radio">
+                                <label>
+                                    <input type="radio" name="optradio" checked>1</label>
+                                </div>
+                            </td>
+                         <td>
+                            <div class="radio">
+                             <label><input type="radio" name="optradio" checked>2</label>
+                         </div>
+                     </td>
+                     <td>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" checked>3</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio" checked>4</label>
+                        </div>
+                         </td>
+                         <td>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio" checked>5</label>
+                        </div>
+                             </td>
+                         
+                     </tbody>
+                     </table>
+                       <table class="table table-borderless" >
+                        <tbody >
+                        <th class="abc">Section</th>
+                         <td >
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-danger">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Smoking
+                    </label>
+                    <label class="btn btn-success">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Non-Smoking
+                    </label>
+                    </div>
+                    </td>
+
+                 <table class="table table-borderless">
+                    <tbody>
+                 
+                    <th class="abc">Date And Time</th>
+                    <td>
+                        <div class="date ">
+                            <label><input for="date"  name="date" class="form-control" width="30" placeholder="Date"></label>
+                        </div>
+                            </td>
+                            <td>
+
+                        <div class="time">
+                            <label><input for="time"  name="time" class="form-control" width="30" placeholder="Time"></label>
+                        </div>
+                   </td>
+            </tbody>
+        </table>
     </div>
 </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+        <button type="button" class="btn btn-primary">Reserve</button>
+      </div>
+    </div>
+  </div>
 </div>
 </header>
- <div class="row row-content">
+<div class="container">
+   <div class="row row-content">
            <div class="col">
             <div id="mycarousel" class="carousel slide" data-ride="carousel">
                    <div class="carousel-inner" role="listbox">
@@ -130,10 +211,17 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                                    <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                        <span class="fa fa-play"></span>
+                    </button>
+                </div>
             </div>
        </div>
-
-</div>
+   </div>
 <div class="row row-content align-items-center">
     <div class="col-12 col-sm-4 order-sm-last col-md-3">
         <h3>Our Lipsmacking Culinary Creations</h3>
@@ -180,75 +268,11 @@
         <h4 class="mt-0">Executive Chef</h4>
         <p class="d-none d-sm-block" >Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
     </div>
-
-
+     </div>
+ </div>
 </div>
-    </div>
 </div>
-<div class="row row-content col-8" >
-<div  class="col-sm" >
-                <div class="card ">
-                  <h3 class="card-header bg-warning text-white " href="#Reversetable">Reserve Table</h3>
-                  <div class="table-responsive">
-                    <table class="table table-borderless" >
-                        <tbody class="table table-borderless">
-                            <tr>
-                            <th>Number of Guest</th>
-                            <td >
-                                <div class="radio">
-                                        <label><input type="radio" name="optradio" checked>1</label>
-                                 </div>
-                             </td>
-                             <td>
-                                <div class="radio">
-                                        <label><input type="radio" name="optradio" checked>2</label>
-                                 </div>
-                             </td>
-                             <td>
-                                <div class="radio">
-                                        <label><input type="radio" name="optradio" checked>3</label>
-                                 </div>
-                             </td>
-                             <td>
-                                <div class="radio">
-                                        <label><input type="radio" name="optradio" checked>4</label>
-                                 </div>
-                             </td>
-                             <td>
-                                <div class="radio">
-                                        <label><input type="radio" name="optradio" checked>5</label>
-                                 </div>
-                             </td>
-                         </tr>
-                     </tbody>
-                     </table>
-                         <table class="table table-borderless">
-                            <tbody class="table table-borderless">
-                         <tr>
-                            <th>Date And Time</th>
-                            <td>
-                                <div class="date ">
-                                    <label><input for="date"  name="date" class="form-control" width="30" placeholder="Date"></label>
-                                </div>
-                                    <td>
-                                <div class="time">
-                                    <label><input for="time"  name="time" class="form-control" width="30" placeholder="Time"></label>
-                                </div>
-                                <tr>
-                                    <td>
-                                    </td>
-                                <td>
-                                    <div class="button">
-                                        <button type="submit"  class="btn btn-primary">Reserve</button>
-                                    </div>
-                                </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-         </div>
-      </div>
-   </div>
+</div>
 </div>
 <footer class="footer">
 <div class="container">
@@ -294,6 +318,18 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+<script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+            $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+            $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
